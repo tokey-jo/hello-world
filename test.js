@@ -1,3 +1,4 @@
+if (top.location != self.location){top.location = self.location;}
 var iframe = document.createElement('iframe');
 iframe.width="100%";
 iframe.height="100%";
